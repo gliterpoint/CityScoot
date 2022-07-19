@@ -79,3 +79,18 @@ footer {
 footer a:hover {
 	background-color: transparent !important;
 }
+
+.login-form{
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	// flex-direction: column;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px){
+.navbar {
+    border-radius: 0px;
+}
+}

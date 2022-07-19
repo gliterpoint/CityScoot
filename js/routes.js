@@ -1,3 +1,4 @@
+// JavaScript AJAX to Read Data And Display on the Dynamic HTML Table 
 (
 	function(){
 		var xhr = new XMLHttpRequest();
