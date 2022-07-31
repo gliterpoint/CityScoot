@@ -1,6 +1,6 @@
 // JavaScript AJAX to Read Individual Data of Tour And Display Data on the route.html Dynamically 
 
-var routesPanel = document.getElementById("route-panel");
+const routesPanel = document.getElementById("route-panel");
 
 async function FetchRouteData() {
 	const res = await fetch("../data/routes.json");

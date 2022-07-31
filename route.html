@@ -21,39 +21,40 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">CityScoot</a>
+                <a class="navbar-brand" href="/">CityScoot</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="auth-header">
                     <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="routes.html">Routes</a></li>
-                    <li><a href="guide.html">Guides</a></li>
+                    <li><a href="guides.html">Guides</a></li>
                     <li><a href="scooter.html">Scooters</a></li>
                     <li><a href="safety.html">Safety</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" id="unauth-header">
                     <li>
-                        <a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+                        <a href="login.html" id="login">Login</a>
                     </li>
                     <li>
-                        <a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a href="register.html" id="register">Register</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" id="logout-username">
+                    <li>
+                        <a id="logged-user"></a>
                     </li>
                     <li>
-                        <a href="http://google-plus.com"><i class="fa fa-google-plus"></i></a>
-                    </li>
-                    <li>
-                        <a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a>
+                        <a href="login.html" id="logout">Logout</a>
                     </li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
         </div>
     </nav>
 
     <div class="title-bar">
         <div class="container">
-            <h1>Routes</h1>
+            <h1>Route</h1>
         </div>
     </div>
 
@@ -106,6 +107,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
     <script src="./js/route.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>

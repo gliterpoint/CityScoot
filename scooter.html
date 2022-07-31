@@ -1,41 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" href="img/city-scoot-logo.png" />
-		<title>CityScoot</title>
-		<link rel="stylesheet" href="sass/app.css" />
-	</head>
 
-	<body>
-		<nav class="navbar navbar-default">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="img/city-scoot-logo.png" />
+	<title>CityScoot</title>
+	<link rel="stylesheet" href="sass/app.css" />
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+					aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">CityScoot</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav" id="auth-header">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="routes.html">Routes</a></li>
+					<li><a href="guides.html">Guides</a></li>
+					<li class="active"><a href="scooter.html">Scooters</a></li>
+					<li><a href="safety.html">Safety</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="unauth-header">
+					<li>
+						<a href="login.html" id="login">Login</a>
+					</li>
+					<li>
+						<a href="register.html" id="register">Register</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" id="logout-username">
+					<li>
+						<a id="logged-user"></a>
+					</li>
+					<li>
+						<a href="login.html" id="logout">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="title-bar">
+		<div class="container">
+			<h1>Scooters</h1>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" src="img/scooters.jpg" alt="Card image" style="width: 100%" />
+						<div class="card-body">
+							<p class="card-text">
+								With a top speed of 25 km/h and a range of 40 km, the Blast
+								electric scooters are the perfect urban mobility solution for
+								getting around a modern city like London. Scooters are
+								lightweight and can easily be folded and carried. They can
+								also be switched to traditional foot mode, if the battery is
+								empty.
+							</p>
+							<p><b> Blast scooters features include:</b></p>
+							<ul>
+								<li>GPS/GPRS devices and anti-theft systems.</li>
+								<li>Fairlight anti-slip brakes.</li>
+								<li>
+									High capacity 60V batteries with a typical four-hour charge
+									life.
+								</li>
+								<li>Height adjustable handlebars.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<nav class="navbar">
 			<div class="container">
 				<div class="navbar-header">
-					<button
-						type="button"
-						class="navbar-toggle collapsed"
-						data-toggle="collapse"
-						data-target="#navbar"
-						aria-expanded="false"
-						aria-controls="navbar"
-					>
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
 					<a class="navbar-brand" href="#">CityScoot</a>
 				</div>
-				<div id="navbar" class="collapse navbar-collapse">
+				<div id="navbar">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="routes.html">Routes</a></li>
-						<li><a href="guide.html">Guides</a></li>
-						<li class="active"><a href="scooter.html">Scooters</a></li>
-						<li><a href="safety.html">Safety</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="/">Privacy polices</a></li>
+						<li><a href="/">Terms & Conditions</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
@@ -45,9 +109,7 @@
 							<a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
 						</li>
 						<li>
-							<a href="http://google-plus.com"
-								><i class="fa fa-google-plus"></i
-							></a>
+							<a href="http://google-plus.com"><i class="fa fa-google-plus"></i></a>
 						</li>
 						<li>
 							<a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a>
@@ -58,88 +120,15 @@
 			</div>
 		</nav>
 
-		<div class="title-bar">
-			<div class="container">
-				<h1>Scooters</h1>
-			</div>
+		<div class="container">
+			<hr />
+			<p class="text-center">Copyright &copy; 2022 CityScoot</p>
 		</div>
+	</footer>
 
-		<div class="main">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card">
-							<img
-								class="card-img-top"
-								src="img/scooters.jpg"
-								alt="Card image"
-								style="width: 100%"
-							/>
-							<div class="card-body">
-								<p class="card-text">
-									With a top speed of 25 km/h and a range of 40 km, the Blast
-									electric scooters are the perfect urban mobility solution for
-									getting around a modern city like London. Scooters are
-									lightweight and can easily be folded and carried. They can
-									also be switched to traditional foot mode, if the battery is
-									empty.
-								</p>
-								<p><b> Blast scooters features include:</b></p>
-								<ul>
-									<li>GPS/GPRS devices and anti-theft systems.</li>
-									<li>Fairlight anti-slip brakes.</li>
-									<li>
-										High capacity 60V batteries with a typical four-hour charge
-										life.
-									</li>
-									<li>Height adjustable handlebars.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+	<script src="./js/main.js" type="module"></script>
+</body>
 
-		<footer>
-			<nav class="navbar">
-				<div class="container">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="#">CityScoot</a>
-					</div>
-					<div id="navbar">
-						<ul class="nav navbar-nav">
-							<li><a href="/">Privacy polices</a></li>
-							<li><a href="/">Terms & Conditions</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
-							</li>
-							<li>
-								<a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
-							</li>
-							<li>
-								<a href="http://google-plus.com"
-									><i class="fa fa-google-plus"></i
-								></a>
-							</li>
-							<li>
-								<a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a>
-							</li>
-						</ul>
-					</div>
-					<!--/.nav-collapse -->
-				</div>
-			</nav>
-
-			<div class="container">
-				<hr />
-				<p class="text-center">Copyright &copy; 2022 CityScoot</p>
-			</div>
-		</footer>
-
-		<script src="bower_components/jquery/dist/jquery.js"></script>
-		<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
-	</body>
 </html>

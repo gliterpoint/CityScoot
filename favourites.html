@@ -29,7 +29,7 @@
 					<li><a href="routes.html">Routes</a></li>
 					<li><a href="guides.html">Guides</a></li>
 					<li><a href="scooter.html">Scooters</a></li>
-					<li class="active"><a href="safety.html">Safety</a></li>
+					<li><a href="safety.html">Safety</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right" id="unauth-header">
@@ -54,36 +54,60 @@
 
 	<div class="title-bar">
 		<div class="container">
-			<h1>Safety</h1>
+			<h1>Favourite Routes</h1>
 		</div>
 	</div>
 
 	<div class="main">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" src="img/helmet.jpg" alt="Card image" style="width: 100%" />
-						<div class="card-body">
-							<h4 class="card-title">Helmet Safety</h4>
-							<p class="card-text">
-								Scooter touring is as safe as cycling on roads. However, we
-								seek to minimise the risk to life and limb for our customers
-								by providing:
+				<div class="col">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">Favourites Routes Details</h4>
+						</div>
+						<div class="panel-body">
+							<p>
+								CityScoot tours are designed around areas of London, such as
+								Soho, Bloomsbury, Greenwich, Camden Town etc. Routes take in
+								major highlights, but also explore off-the-beaten-track. Each
+								tour takes approximately four hours to complete. There are
+								always short stops for drinks and a longer stop for lunch or
+								dinner. Bookings can be made up to two-hours before the tour
+								starts.
 							</p>
+							<table class="table" id="fav-route-table">
+								<thead>
+									<tr>
+										<th scope="col">Sr #</th>
+										<th scope="col">Name</th>
+										<th scope="col">Day</th>
+										<th scope="col">Time</th>
+										<th scope="col">Highlights</th>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
 
-							<ul>
-								<li>Tours in low traffic periods (mainly Sunday morning).</li>
-								<li>The best scooters currently available.</li>
-								<li>Safety helmets.</li>
-								<li>
-									Low risk routes using the existing cycling infrastructure
-									where possible.
-								</li>
-								<li>Optional fully comprehensive insurance.</li>
-								<li>Safety trained guides.</li>
-							</ul>
-							<a href="#" class="btn btn-primary">See Details</a>
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+				aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title" id="exampleModalLongTitle">Routes</h3>
+						</div>
+						<div class="modal-body">
+							<h4>Your Favourite Route has been Deleted Successfully !</h4>
+						</div>
+						<div class="modal-footer">
+							<button type="button" id="close-modal" class="btn btn-secondary"
+								data-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
@@ -129,6 +153,7 @@
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+	<script src="./js/storage.js"></script>
 	<script src="./js/main.js" type="module"></script>
 </body>
 
